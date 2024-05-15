@@ -1,0 +1,27 @@
+/* container to align the cards properly */
+.container.parent {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* adjust spacing as needed */
+    gap: 1rem; /* space between cards */
+    padding: 1rem; /* optional padding for container */
+}
+
+/* wrapper for each card to control its size */
+.card-wrapper {
+    display: flex;
+    justify-content: center;
+    width: calc(25% - 1rem); /* Adjust card width as needed (e.g., 25% for 4 cards per row) */
+    margin-bottom: 1rem; /* space below each card */
+}
+
+/* styles for individual cards */
+.card {
+    width: 100%; /* ensure card takes full width of wrapper */
+    max-width: 18rem; /* ensure max width for each card */
+}
+.imgstyle{
+    height: 150px;
+    width: 140px;
+    object-fit: fit;
+}

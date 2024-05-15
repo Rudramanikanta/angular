@@ -1,0 +1,11 @@
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(234 179 8);
+}
+h1{
+    color: red;
+    font-weight: bolder;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

@@ -1,0 +1,17 @@
+<div>
+  <app-search (outputsearch)="serachvalue($event)"></app-search>
+  <app-filter [all]="numberofall()"></app-filter>
+</div>
+
+<div class="container parent">
+  <div class="card-wrapper" *ngFor="let item of products">
+      <div *ngIf="item.title === '' || item.title.toLowerCase().includes(finalvalue)" class="card alert alert-success">
+          <img  class="card-img-top imgstyle" [src]="item.images[0]" alt="Card image cap">
+          <div class="card-body">
+              <h5 class="card-title">{{ item.title }}</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+          </div>
+      </div>
+  </div>
+</div>
